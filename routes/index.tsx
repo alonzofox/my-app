@@ -4,8 +4,8 @@ import Counter from '../islands/Counter.tsx';
 import Countdown from '../islands/Countdown.tsx';
 
 export default function Home() {
-  const date = new Date(Date.parse("2022-06-30T18:00:00"));
-  //date.setMinutes(date.getMinutes() + 1);
+  const date = new Date();
+  date.setMinutes(date.getMinutes() + 1);
 
   return (
     <div>
